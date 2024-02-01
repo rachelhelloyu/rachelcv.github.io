@@ -35,7 +35,7 @@
 		var windowWidth = $(window).width();
 		if (windowWidth <= 1199) {
 		}else {
-	 $(".card-inner").niceScroll();
+	$(".card-inner").niceScroll();
 		}
 	}
 	customScrollbar();
@@ -103,13 +103,13 @@
 
 	//Jquery Knob animation 
 	if($('.dial').length){
-	   $('.dial').appear(function(){
-          var elm = $(this);
-          var color = elm.attr('data-fgColor');  
-          var perc = elm.attr('value');  
- 
-          elm.knob({ 
-               'value': 0, 
+	$('.dial').appear(function(){
+		var elm = $(this);
+		var color = elm.attr('data-fgColor');  
+		var perc = elm.attr('value');  
+
+		elm.knob({ 
+			'value': 0, 
                 'min':0,
                 'max':100,
                 'skin':'tron',
@@ -117,29 +117,29 @@
                 'thickness':0.12,
 				'dynamicDraw': true,
 				'displayInput':false
-          });
+		});
 
-          $({value: 0}).animate({ value: perc }, {
-			  duration: 2000,
-              easing: 'swing',
-              progress: function () { elm.val(Math.ceil(this.value)).trigger('change');
-              }
-          });
+		$({value: 0}).animate({ value: perc }, {
+			duration: 2000,
+			easing: 'swing',
+			progress: function () { elm.val(Math.ceil(this.value)).trigger('change');
+			}
+		});
 
-          },{accY: 0});
+		},{accY: 0});
     }
 	
 	
 	//Jquery Knob animation Two 
 	function knobAnimate() {
 	if($('.round-dial').length){
-	   $('.round-dial').each(function(){
-          var elm = $(this);
-          var color = elm.attr('data-fgColor');  
-          var perc = elm.attr('value');  
- 
-          elm.knob({ 
-               'value': 0, 
+	$('.round-dial').each(function(){
+		var elm = $(this);
+		var color = elm.attr('data-fgColor');  
+		var perc = elm.attr('value');  
+
+		elm.knob({ 
+			'value': 0, 
                 'min':0,
                 'max':100,
                 'skin':'tron',
@@ -147,16 +147,16 @@
                 'thickness':0.12,
 				'dynamicDraw': true,
 				'displayInput':false
-          });
+        });
 
-          $({value: 0}).animate({ value: perc }, {
-			  duration: 0,
-              easing: 'swing',
-              progress: function () { elm.val(Math.ceil(this.value)).trigger('change');
-              }
-          });
+		$({value: 0}).animate({ value: perc }, {
+			duration: 0,
+			easing: 'swing',
+			progress: function () { elm.val(Math.ceil(this.value)).trigger('change');
+			}
+		});
 
-          });
+		});
     }
 	}
 	
@@ -174,9 +174,9 @@
 	
 			$container.isotope({
 				itemSelector: '.masonry-item',
-				 masonry: {
+				masonry: {
 					columnWidth : '.column-width'
-				 },
+				},
 				animationOptions:{
 					duration:500,
 					easing:'linear'
@@ -210,9 +210,9 @@
 	
 			$container.isotope({
 				itemSelector: '.masonry-item',
-				 masonry: {
+				masonry: {
 					columnWidth : '.masonry-item',
-				 },
+				},
 				animationOptions:{
 					duration:500,
 					easing:'linear'
@@ -239,7 +239,7 @@
 	if ($('.portfolio-carousel-one').length) {
 		$('.portfolio-carousel-one').owlCarousel({
 			animateOut: 'fadeOut',
-    		animateIn: 'fadeIn',
+		animateIn: 'fadeIn',
 			loop:true,
 			mouseDrag:false,
 			margin:30,
@@ -266,7 +266,7 @@
 	if ($('.portfolio-carousel-two').length) {
 		$('.portfolio-carousel-two').owlCarousel({
 			animateOut: 'fadeOut',
-    		animateIn: 'fadeIn',
+		animateIn: 'fadeIn',
 			loop:true,
 			mouseDrag:false,
 			margin:30,
