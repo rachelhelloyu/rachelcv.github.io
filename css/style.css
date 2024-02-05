@@ -733,9 +733,9 @@ i.fa {
   color: #222;
 }
 
-.card-about .list-style-one li i {
-  color: #222;
+.card-about .list-style-one li p{
   text-decoration-line: underline;
+  color:#183B83
 }
 
 .skill-section .row {
