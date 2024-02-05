@@ -733,11 +733,10 @@ i.fa {
   color: #222;
 }
 
-.card-about .list-style-one li p{
+.card-about .underline-strong {
   text-decoration-line: underline;
   color:#183B83
 }
-
 .skill-section .row {
   margin: 0 -60px;
 }
